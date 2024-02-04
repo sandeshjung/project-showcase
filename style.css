@@ -29,10 +29,14 @@
     justify-content: space-between;
 }
 
+
+.fa-bars {
+    display: none;
+}
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 8rem;
+    gap: 6rem;
 }
 
 .navbar li {
@@ -79,6 +83,7 @@
 .hero .hero-container .project-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     padding-top: 2rem;
     text-align: center;
@@ -88,7 +93,7 @@
 }
 
 .hero .hero-container .project-container .project {
-    width: 31%;
+    width: 25%;
     padding: 2rem 2rem;
     background-color: #ffffff;
     position: relative;
@@ -111,10 +116,12 @@
 
 .hero .hero-container .project-container .project h3 {
     color: var(--heading-color);
+    margin-bottom: 0.5rem;
 }
 
 .hero .hero-container .project-container .project p {
-    color: var(--text-color)
+    color: var(--text-color);
+    font-size: 0.9rem;
 }
 
 .main-fa {
@@ -141,12 +148,34 @@ footer {
     padding: 3rem 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width:960px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    .hero .hero-container .project-container .project {
+        width: 38%;
+        padding: 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
     .navbar ul {
         display: none;
+    }
+    .fa-bars{
+        display: inline-block;
+        height: auto;
+        width: 2rem;
     }
     .container {
         width: 90%;
         margin: auto;
     }
+    .hero .hero-container .project-container .project {
+        padding: 4rem 0;
+        height: auto;
+        width: 50%;
+    }
+
 }

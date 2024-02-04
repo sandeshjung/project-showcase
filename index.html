@@ -11,10 +11,12 @@
     <div class="container">
         <nav class="navbar">
             <img src="./assets/Bajra Technologies.png" class="bajra-img" alt="Bajra Technologies">
-            <ul>
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+            <ul class="menuList">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
             </ul>
+            
         </nav>
         <div class="hero">
             <div class="hero-container">
@@ -41,7 +43,7 @@
                     <div class="project">
                         <img src="assets/design challenge.png" alt="Address Book" class="address-img">
                         <h3>DESIGN CHALLENGE</h3>
-                        <p>The Bash Address Book project provides a straightforward and user-friendly solution for managing contact information through the terminal. This simple yet effective script allows users to seamlessly add, delete, update, and view the addresses of individuals stored in their personal address book.</p>
+                        <p>The Design Challenge assignment involves transforming a Figma design into code using only HTML and CSS.</p>
                         <div class="main-fa">
                             <a href="https://sandeshjung.github.io/Traineeship-Project/" target="_blank" style="text-decoration: none; color: #858484;">
                                 <i class="fa-solid fa-up-right-from-square"></i>
@@ -53,6 +55,23 @@
                         </div>
                     </div>
 
+                    <div class="project">
+                        <img src="assets/game.png" alt="Address Book" class="address-img">
+                        <h3>Bug on Wire</h3>
+                        <p>The Bug on Wire game was developed from scratch using HTML, CSS and JavaScript. The task includes implementing game mechanics, obstacle movements, scoring, and user interactions within a web browser.</p>
+                        <div class="main-fa">
+                            <a href="https://sandeshjung.github.io/bug-on-wire" target="_blank" style="text-decoration: none; color: #858484;">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                            <div class="right-fa">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
 
                 </div>
             </div>
@@ -61,5 +80,11 @@
             © 2024 Sandesh Jung Kunwar.
         </footer>
     </div>
+    <script>
+        document.getElementById("menuIcon").addEventListener("click", function() {
+            var menuList = document.getElementById("menuList");
+            menuList.classList.toggle("show-menu");
+        });
+    </script>
 </body>
 </html>
